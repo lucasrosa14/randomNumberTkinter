@@ -32,6 +32,8 @@ def compara():
 tela = Tk()
 tela.title('Random')
 tela.geometry('225x195')
+tela.resizable(False, False)
+tela.eval('tk::PlaceWindow . center')
 tela.configure(bg='darkgrey')
 
 Label(tela, text='Escolha um número :',bg='darkgrey', fg='#000000').place(x=20, y=70,)
