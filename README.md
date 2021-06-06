@@ -7,7 +7,7 @@ No trecho de código abaixo, eu preciso retornar o valor gerado na função 'ger
 Ao atribuir o gera_relatorio() à variável valor_aleatório, a função é executada antes de clicar no botão, gerando inconsistência na comparação dos números.
 
 
-def gera_aleatorio():
+**def gera_aleatorio():
     vlr_random = randint(1, 5)
     print('Número gerado: {}'.format(vlr_random))
     return vlr_random
@@ -16,6 +16,6 @@ valor_aleatorio = gera_aleatorio()
 
 def compara():
     #num_aleatorio = int(gera_aleatorio())
-    num_aleatorio = valor_aleatorio
+    num_aleatorio = valor_aleatorio**
     
 Agradeço se alguém puder ajudar. 
