@@ -10,15 +10,17 @@ def num_entrada():
 
 
 def gera_aleatorio():
+    global vlr_random
     vlr_random = randint(1, 5)
     print('Número gerado: {}'.format(vlr_random))
-    return vlr_random
 
-valor_aleatorio = gera_aleatorio()
+    #return vlr_random
+
+#valor_aleatorio = gera_aleatorio()
 
 def compara():
     #num_aleatorio = int(gera_aleatorio())
-    num_aleatorio = valor_aleatorio
+    num_aleatorio = vlr_random
     num_input = num_entrada()
     print('Número digitado {}'.format(num_input))
     tb_entrada.delete(0, END)
