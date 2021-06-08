@@ -5,31 +5,26 @@ from random import randint
 
 
 def num_entrada():
+    global vlr_entrada
     vlr_entrada = int(float(tb_entrada.get()))
-    return vlr_entrada
+    print(f'Número digitado: {vlr_entrada}')
+    tb_entrada.delete(0, END)
 
 
 def gera_aleatorio():
     global vlr_random
     vlr_random = randint(1, 5)
-    print('Número gerado: {}'.format(vlr_random))
+    print(f'Número gerado: {vlr_random}')
 
-    #return vlr_random
 
-#valor_aleatorio = gera_aleatorio()
 
 def compara():
-    #num_aleatorio = int(gera_aleatorio())
-    num_aleatorio = vlr_random
-    num_input = num_entrada()
-    print('Número digitado {}'.format(num_input))
-    tb_entrada.delete(0, END)
-    if (num_input < num_aleatorio):
+    if (vlr_entrada < vlr_random):
         messagebox.showinfo('Resultado','Você digitou um número abaixo do valor aleatório. Digite outro número')
-    elif(num_input > num_aleatorio):
+    elif(vlr_entrada > vlr_random):
         messagebox.showinfo('Resultado','Você digitou um número acima do valor aleatório. Digite outro número')
     else:
-        messagebox.showinfo('Resultado', 'O número aleatório era {}. Você acertou!!'.format(num_aleatorio))
+        messagebox.showinfo('Resultado', 'O número aleatório era {}. Você acertou!!'.format(vlr_random))
 
 tela = Tk()
 tela.title('Random')
