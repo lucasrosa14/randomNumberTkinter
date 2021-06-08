@@ -20,9 +20,9 @@ def gera_aleatorio():
 
 def compara():
     if (vlr_entrada < vlr_random):
-        messagebox.showinfo('Resultado','Você digitou um número abaixo do valor aleatório. Digite outro número')
+        messagebox.showerror('Resultado','Você digitou um número abaixo do valor aleatório. Digite outro número')
     elif(vlr_entrada > vlr_random):
-        messagebox.showinfo('Resultado','Você digitou um número acima do valor aleatório. Digite outro número')
+        messagebox.showerror('Resultado','Você digitou um número acima do valor aleatório. Digite outro número')
     else:
         messagebox.showinfo('Resultado', 'O número aleatório era {}. Você acertou!!'.format(vlr_random))
 
